@@ -40,7 +40,7 @@ html {
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     background: var(--gradient-bg);
     color: var(--text-primary);
     line-height: 1.6;
@@ -310,6 +310,97 @@ body {
     50% { transform: translateY(-30px) rotate(5deg); }
 }
 
+/* About Section */
+.about {
+    padding: 8rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.about-text {
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+}
+
+.about-text strong {
+    color: var(--primary-cyan);
+    font-weight: 600;
+}
+
+.credentials {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    backdrop-filter: blur(20px);
+}
+
+.credentials h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.credential-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: start;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.credential-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.credential-item:first-child {
+    padding-top: 0;
+}
+
+.credential-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.credential-item h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.credential-item p {
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.research-note {
+    padding: 1.5rem;
+    background: rgba(6, 255, 165, 0.05);
+    border-left: 3px solid var(--primary-cyan);
+    border-radius: 8px;
+    margin-top: 2rem;
+    font-style: italic;
+}
+
 /* Services Section */
 .services {
     padding: 8rem 0;
@@ -554,6 +645,58 @@ body {
     font-size: 1.25rem;
     color: var(--text-secondary);
     margin-bottom: 3rem;
+}
+
+/* Pricing Section */
+.pricing-info {
+    margin-bottom: 3rem;
+}
+
+.pricing-card {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2.5rem;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.pricing-card h3 {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.pricing-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.pricing-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.pricing-item:last-child {
+    border-bottom: none;
+}
+
+.pricing-label {
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+.pricing-value {
+    color: var(--primary-cyan);
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .contact-info {
