@@ -670,6 +670,13 @@ body {
     background-clip: text;
 }
 
+.pricing-description {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: center;
+}
+
 .pricing-details {
     display: flex;
     flex-direction: column;
