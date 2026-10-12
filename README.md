@@ -33,7 +33,7 @@ Cyborg Commons is community-level technology support that breaks down the walls 
 ## To do
 
 1. **Session time.** `session.html` and the teaser on `index.html` say "Time to be announced". Replace both when the time is set.
-2. **Sign-up.** In `session.html`, paste the sign-up form or scheduling embed inside `<div id="signup-embed">`. `script.js` hides the "coming soon" note automatically. If the provider only gives a link, replace the note with a `<a class="btn" href="...">Sign up</a>` button. Check where the provider stores responses before choosing one.
+2. ~~**Sign-up.**~~ Done: `session.html` embeds the OpnForm sign-up form in `<div id="signup-embed">`, loaded via the OpnForm SDK script. This is the one external script the site loads; check OpnForm's response storage before swapping providers.
 3. **Source check.** On `why-it-matters.html`, replace the Yorkshire Evening Post link with the Undercover Policing Inquiry's own site (ucpi.org.uk) if possible.
 4. **Hosting.** Choose a host the organization controls. The footer says the site loads no ads, trackers, or third-party fonts, so keep that true: no analytics, no embedded fonts, no external scripts without a decision.
 
