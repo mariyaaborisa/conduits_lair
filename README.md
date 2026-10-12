@@ -1,30 +1,38 @@
 # Cyborg Commons site
 
-A small static site: five pages, one stylesheet, one script. No build step, no dependencies.
+A small static site: four pages, one stylesheet, one script. No build step, no dependencies.
 
 ## Files
 
 | File | Purpose |
 | --- | --- |
-| `index.html` | Home: headline, next-session teaser, links to the other pages |
-| `session.html` | Spooky Social Engineering: Mapping the Threat (Friday, October 30, time TBD) |
-| `why-it-matters.html` | Three sourced facts and a short closing question |
-| `little-tech.html` | Why little tech: four short points |
-| `about.html` | Short bio |
+| `index.html` | About: bio, why Cyborg Commons, links to the other pages |
+| `what-we-do.html` | Services and why little tech |
+| `session.html` | Social Engineering 101 / Spooky Social Engineering: Mapping the Threat (Friday, October 30, time TBD) |
+| `why-it-matters.html` | Three sourced facts and a short closing question (linked from About and What we do, not in the nav) |
+| `fonts/` | Atkinson Hyperlegible Next font files (to be added, see Font below) |
 | `styles.css` | All styles. Design tokens are in `:root` at the top |
 | `script.js` | Marks the current nav link, fills the footer year, hides the sign-up note when an embed is present |
 
 Open `index.html` in a browser, or serve the folder with any static host. Icons are inline SVG, so nothing else needs to load.
+
+## Font
+
+The site uses Atkinson Hyperlegible Next, with system fonts as the fallback. The font files are not in the folder yet. To add them:
+
+1. Get the font under the SIL Open Font License, for example the npm package `@fontsource/atkinson-hyperlegible-next`, or the official files from the Braille Institute.
+2. Copy these three files into `fonts/`, with exactly these names: `atkinson-hyperlegible-next-latin-400-normal.woff2`, `atkinson-hyperlegible-next-latin-600-normal.woff2`, `atkinson-hyperlegible-next-latin-700-normal.woff2`.
+3. Do not use the Google Fonts link. The footer says no third-party fonts load, so keep the files on the site.
 
 ## Design rules (keep these)
 
 - White background, system fonts, one green accent, hairline dividers, small line icons.
 - Minimal and plain. No gradients, shadows, stock imagery, or emoji.
 - Short copy. If a page grows past a screen or two of text, cut it.
-- Say "Maria-Teresa C." for the person and "Cyborg Commons" for the firm. Do not use the full surname.
+- Say "Maria Teresa" for the person and "Cyborg Commons" for the firm. Do not use a surname.
 - Tone toward big tech is neutral and appreciative. Lead with the positives of little tech; do not criticize big platforms.
 - Do not use em dashes in any copy. Use hyphens, commas, or periods.
-- The header and footer are repeated on every page. If you change one, change all five.
+- The header and footer are repeated on every page. If you change one, change all four.
 
 ## About the firm
 

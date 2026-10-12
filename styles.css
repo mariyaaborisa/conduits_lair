@@ -4,6 +4,32 @@
   Keep it plain. No gradients, shadows, or decorative imagery.
 */
 
+/*
+  Font: Atkinson Hyperlegible Next (SIL Open Font License), served from /fonts so no third-party request is made.
+  Files are not included yet. See README, "Font". Until they are added, the system fonts below are used.
+*/
+@font-face {
+  font-family: "Atkinson Hyperlegible Next";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Atkinson Hyperlegible Next"), url("fonts/atkinson-hyperlegible-next-latin-400-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible Next";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local("Atkinson Hyperlegible Next SemiBold"), url("fonts/atkinson-hyperlegible-next-latin-600-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible Next";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Atkinson Hyperlegible Next Bold"), url("fonts/atkinson-hyperlegible-next-latin-700-normal.woff2") format("woff2");
+}
+
 :root {
   --bg: #ffffff;
   --fg: #17201c;
@@ -12,7 +38,7 @@
   --accent: #1d5c47;
   --accent-ink: #ffffff;
   --soft: #f4f7f5;
-  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font: "Atkinson Hyperlegible Next", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color-scheme: light;
 }
 
@@ -35,7 +61,7 @@ h1 { font-size: clamp(2rem, 5.4vw, 2.75rem); font-weight: 700; letter-spacing: -
 h2 { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.01em; }
 h3 {
   font-size: 0.9375rem;
-  font-weight: 650;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--muted);
@@ -71,11 +97,11 @@ a:hover { color: var(--fg); }
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: baseline;
-  gap: 8px 28px;
+  align-items: center;
+  gap: 12px 28px;
   padding-block: 24px;
 }
-.brand { font-weight: 650; color: var(--fg); text-decoration: none; }
+.brand { font-weight: 600; color: var(--fg); text-decoration: none; }
 .brand .muted { font-weight: 400; }
 .top nav { display: flex; flex-wrap: wrap; gap: 6px 22px; font-size: 0.95rem; }
 .top nav a { color: var(--muted); text-decoration: none; }
@@ -111,6 +137,7 @@ a:hover { color: var(--fg); }
   text-decoration: none;
 }
 .btn:hover { background: var(--fg); border-color: var(--fg); color: var(--accent-ink); }
+.btn-sm { padding: 7px 14px; font-size: 0.95rem; }
 .btn .ic { stroke: currentColor; width: 18px; height: 18px; }
 
 /* Icons: inline SVG with class "ic" */
@@ -170,7 +197,7 @@ a:hover { color: var(--fg); }
   text-decoration: none;
 }
 .teaser:hover { border-color: var(--accent); color: var(--fg); }
-.teaser strong { display: block; font-weight: 650; }
+.teaser strong { display: block; font-weight: 600; }
 .teaser .go { margin-left: auto; }
 
 /* Facts with sources */
