@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cyborg Commons</title>
   <meta name="description" content="Cyborg Commons is a small consulting firm for movement-focused organizations facing high social engineering risk.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; frame-src 'none'; form-action 'none'; base-uri 'none'">
+  <meta name="referrer" content="no-referrer">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,7 +14,7 @@
   <div class="wrap">
 
     <header class="top">
-      <a class="brand" href="index.html">Cyborg Commons <span class="muted">&middot; Maria Teresa</span></a>
+      <a class="brand" href="index.html">Cyborg Commons</a>
       <nav aria-label="Main">
         <a href="index.html">About</a>
         <a href="what-we-do.html">What we do</a>
@@ -27,13 +29,35 @@
         <h1 id="page-title">Hello, I'm Maria Teresa.</h1>
         <p class="lead">I'm a creative technologist and community tech infrastructure engineer. After working across the nonprofit sector, I saw how many bottlenecks and breakdowns start when data and digital security are left to IT alone. I built Cyborg Commons to change that.</p>
         <p>Cyborg Commons is a small consulting firm for movement-focused organizations facing high social engineering risk, including political leaders and small green firms. I'm pro little tech and pro-environment, so together we focus on solutions that protect people, communities, and the planet.</p>
-        <p class="muted">Woman-owned and neurodivergent-led.</p>
+      </section>
+
+      <section class="sec" aria-labelledby="next-title">
+        <h2 id="next-title">Next session</h2>
+        <a class="teaser" href="session.html">
+          <span>
+            <strong>Social Engineering 101 &middot; Spooky Social Engineering: Mapping the Threat</strong>
+            <span class="muted">Friday, October 30 &middot; Time to be announced</span>
+          </span>
+          <svg class="ic go" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+        </a>
+        <div class="countdown" data-countdown="2026-10-30T00:00:00">
+          <svg class="ic ghost" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 10h.01"/><path d="M15 10h.01"/><path d="M12 2a8 8 0 0 0-8 8v12l3-3 2.5 2.5L12 19l2.5 2.5L17 19l3 3V10a8 8 0 0 0-8-8z"/></svg>
+          <div>
+            <p class="cd-label" data-cd-label>Countdown to October 30</p>
+            <p class="cd" role="timer" aria-live="off">
+              <span><b data-cd="d">--</b><small>days</small></span>
+              <span><b data-cd="h">--</b><small>hours</small></span>
+              <span><b data-cd="m">--</b><small>minutes</small></span>
+              <span><b data-cd="s">--</b><small>seconds</small></span>
+            </p>
+          </div>
+        </div>
       </section>
 
       <section class="sec" aria-labelledby="why-title">
         <h2 id="why-title">Why Cyborg Commons</h2>
         <p>We are all dependent on the cyber. Our relationships, our records, and our organizing run through machines, which has made us, in Donna Haraway's sense, cyborgs.</p>
-        <p><em>Commons</em> comes from Fred Moten and Stefano Harney's thinking in <a href="https://www.minorcompositions.info/?p=516" target="_blank" rel="noopener">The Undercommons: Fugitive Planning &amp; Black Study</a>. It means shared life held together by the people in it, not a resource owned by a vendor. For us, a commons means data and digital security belong to the whole organization.</p>
+        <p><em>Commons</em> comes from Fred Moten and Stefano Harney's thinking in <a href="https://www.minorcompositions.info/?p=516" target="_blank" rel="noopener noreferrer">The Undercommons: Fugitive Planning &amp; Black Study</a>. It means shared life held together by the people in it, not a resource owned by a vendor. For us, a commons means data and digital security belong to the whole organization.</p>
       </section>
 
       <section class="sec" aria-labelledby="more-title">
@@ -48,8 +72,9 @@
     </main>
 
     <footer>
-      <span>Cyborg Commons &middot; Maria Teresa, creative technologist and community tech infrastructure engineer</span>
+      <span>Cyborg Commons</span>
       <span>&copy; <span data-year>2026</span> Cyborg Commons. This site loads no ads, trackers, or third-party fonts.</span>
+      <span class="credit">Typeface: Atkinson Hyperlegible Next, by Braille Institute and Applied Design Works.</span>
     </footer>
 
   </div>

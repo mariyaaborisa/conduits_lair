@@ -4,10 +4,7 @@
   Keep it plain. No gradients, shadows, or decorative imagery.
 */
 
-/*
-  Font: Atkinson Hyperlegible Next (SIL Open Font License), served from /fonts so no third-party request is made.
-  Files are not included yet. See README, "Font". Until they are added, the system fonts below are used.
-*/
+/* Font: Atkinson Hyperlegible Next (SIL Open Font License), served from /fonts. */
 @font-face {
   font-family: "Atkinson Hyperlegible Next";
   font-style: normal;
@@ -32,12 +29,15 @@
 
 :root {
   --bg: #ffffff;
-  --fg: #17201c;
-  --muted: #58645f;
-  --line: #dde4e0;
-  --accent: #1d5c47;
+  --fg: #12292b;
+  --muted: #4a6264;
+  --line: #d3e2e2;
+  --accent: #0b6b70;
   --accent-ink: #ffffff;
-  --soft: #f4f7f5;
+  --soft: #eef6f6;
+  --warm: #b4531f;
+  --sand: #fbf5ec;
+  --sand-line: #ecd9c4;
   --font: "Atkinson Hyperlegible Next", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color-scheme: light;
 }
@@ -101,9 +101,9 @@ a:hover { color: var(--fg); }
   gap: 12px 28px;
   padding-block: 24px;
 }
-.brand { font-weight: 600; color: var(--fg); text-decoration: none; }
+.brand { margin-right: auto; font-weight: 600; color: var(--fg); text-decoration: none; }
 .brand .muted { font-weight: 400; }
-.top nav { display: flex; flex-wrap: wrap; gap: 6px 22px; font-size: 0.95rem; }
+.top nav { order: 3; width: 100%; display: flex; flex-wrap: wrap; gap: 6px 22px; font-size: 0.95rem; }
 .top nav a { color: var(--muted); text-decoration: none; }
 .top nav a:hover { color: var(--fg); text-decoration: underline; }
 .top nav a[aria-current="page"] { color: var(--fg); font-weight: 600; text-decoration: underline; }
@@ -219,3 +219,39 @@ footer {
   flex-direction: column;
   gap: 4px;
 }
+
+/* Countdown */
+.countdown {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 16px 18px;
+  border: 1px solid var(--sand-line);
+  border-radius: 8px;
+  background: var(--sand);
+}
+.countdown .ghost { width: 36px; height: 36px; stroke: var(--warm); }
+@media (prefers-reduced-motion: no-preference) {
+  .countdown .ghost { animation: float 3.2s ease-in-out infinite; }
+}
+@keyframes float { 50% { transform: translateY(-4px); } }
+.cd-label { font-size: 0.9rem; color: var(--muted); }
+.cd { display: flex; flex-wrap: wrap; gap: 6px 22px; }
+.cd span { display: flex; flex-direction: column; min-width: 3.2rem; }
+.cd b { font-size: 1.75rem; line-height: 1.1; font-weight: 700; font-variant-numeric: tabular-nums; }
+.cd small { font-size: 0.8rem; color: var(--muted); }
+
+.actions a:not(.btn) { align-self: center; }
+
+/* Session page header with illustration */
+.event-head { display: flex; flex-wrap: wrap; gap: 20px 32px; align-items: center; justify-content: space-between; }
+.event-text { display: flex; flex-direction: column; gap: 20px; flex: 1 1 340px; min-width: 0; }
+.frog { width: 100%; max-width: 280px; height: auto; flex: 0 1 280px; }
+
+@media (max-width: 480px) {
+  .countdown { gap: 12px; padding: 14px; }
+  .cd { gap: 6px 12px; }
+  .cd span { min-width: 2.6rem; }
+}
+
+.credit { font-size: 0.75rem; opacity: 0.85; }
