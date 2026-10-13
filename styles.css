@@ -137,7 +137,7 @@ a:hover { color: var(--fg); }
   text-decoration: none;
 }
 .btn:hover { background: var(--fg); border-color: var(--fg); color: var(--accent-ink); }
-.btn-sm { padding: 7px 14px; font-size: 0.95rem; }
+.btn-sm { padding: 7px 14px; font-size: 0.8rem; white-space: nowrap; }
 .btn .ic { stroke: currentColor; width: 18px; height: 18px; }
 
 /* Icons: inline SVG with class "ic" */
