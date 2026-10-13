@@ -206,8 +206,8 @@ a:hover { color: var(--fg); }
 .src { font-size: 0.9rem; white-space: nowrap; }
 
 /* Sign-up slot on the session page */
-#signup-embed { min-width: 0; max-width: 100%; }
-#signup-embed iframe { max-width: 100%; border: 0; }
+#signup-embed { min-width: 0; max-width: 100%; text-align: center; }
+#signup-embed iframe { display: block; width: 100%; max-width: 560px; margin-inline: auto; border: 0; }
 
 /* Footer */
 footer {
