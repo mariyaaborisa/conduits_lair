@@ -10,7 +10,8 @@ A small static site: four pages, one stylesheet, one script. No build step, no d
 | `what-we-do.html` | Services and why little tech |
 | `session.html` | Social Engineering 101 / Spooky Social Engineering: Mapping the Threat (Friday, October 30, time TBD) |
 | `why-it-matters.html` | Three sourced facts and a short closing question (linked from About and What we do, not in the nav) |
-| `fonts/` | Atkinson Hyperlegible Next font files (to be added, see Font below) |
+| `fonts/` | Atkinson Hyperlegible Next font files, under the SIL Open Font License (see `fonts/LICENSE.txt`) |
+| `images/` | Site images (currently `frog.webp`, used on the session page) |
 | `styles.css` | All styles. Design tokens are in `:root` at the top |
 | `script.js` | Marks the current nav link, fills the footer year, hides the sign-up note when an embed is present |
 
@@ -18,11 +19,7 @@ Open `index.html` in a browser, or serve the folder with any static host. Icons 
 
 ## Font
 
-The site uses Atkinson Hyperlegible Next, with system fonts as the fallback. The font files are not in the folder yet. To add them:
-
-1. Get the font under the SIL Open Font License, for example the npm package `@fontsource/atkinson-hyperlegible-next`, or the official files from the Braille Institute.
-2. Copy these three files into `fonts/`, with exactly these names: `atkinson-hyperlegible-next-latin-400-normal.woff2`, `atkinson-hyperlegible-next-latin-600-normal.woff2`, `atkinson-hyperlegible-next-latin-700-normal.woff2`.
-3. Do not use the Google Fonts link. The footer says no third-party fonts load, so keep the files on the site.
+The site uses Atkinson Hyperlegible Next, with system fonts as the fallback. The font files are in `fonts/` under the SIL Open Font License. Do not use the Google Fonts link; the footer says no third-party fonts load, so keep the files on the site.
 
 ## Design rules (keep these)
 
