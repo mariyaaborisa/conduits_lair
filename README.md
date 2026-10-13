@@ -40,7 +40,7 @@ Cyborg Commons is community-level technology support that breaks down the walls 
 1. ~~**Session time.**~~ Done: `session.html` and the teaser on `index.html` give the time as 3:00 PM Pacific, 5:00 PM Central, 6:00 PM Eastern.
 2. ~~**Sign-up.**~~ Done: `session.html` embeds the OpnForm sign-up form in `<div id="signup-embed">`, loaded via the OpnForm SDK script. This is the one external script the site loads; check OpnForm's response storage before swapping providers.
 3. **Source check.** On `why-it-matters.html`, replace the Yorkshire Evening Post link with the Undercover Policing Inquiry's own site (ucpi.org.uk) if possible.
-4. **Hosting.** Choose a host the organization controls. The footer says the site loads no ads, trackers, or third-party fonts, so keep that true: no analytics, no embedded fonts, no external scripts without a decision.
+4. **Hosting.** Choose a host the organization controls. The footer says the site loads no ads or third-party fonts of its own, so keep that true: no analytics, no embedded fonts, no external scripts without a decision. The one exception is the OpnForm embed on `session.html`, called out separately in that page's footer since it's outside our control.
 
 ## Accessibility notes
 
